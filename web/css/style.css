@@ -365,6 +365,20 @@ i.camera {
 ul.nav.nav-pills.nav-stacked.custom-nav li:hover i.camera {
     background:url(../images/radio1.png) no-repeat 0px 0px;
 }
+i.games {
+    width:16px;
+    height:16px;
+    background:url(../images/game.png) no-repeat 0px 0px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+ul.nav.nav-pills.nav-stacked.custom-nav li:hover i.games {
+    background:url(../images/game1.png) no-repeat 0px 0px;
+}
 @media (max-width:767px){
 	.hidden-xs{display:none!important}
 	.visible-xs {
