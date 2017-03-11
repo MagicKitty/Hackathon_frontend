@@ -175,6 +175,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<!-- //search-scripts -->
 											 <!---->
 											  <div class="col-md-4 player">
+												<!---->
 												<script type="text/javascript">
 													$(function(){
 													  $('#audio-player').mediaelementplayer({
@@ -190,8 +191,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												<!--audio-->
 													<link rel="stylesheet" type="text/css" media="all" href="css/audio.css">
 													<script type="text/javascript" src="js/mediaelement-and-player.min.js"></script>
-												<!--audio-->
-													
 													<!---->
 
  	 <!-- /w3layouts-agile -->
@@ -247,7 +246,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<!--/video-main-->
 								 <div class="container">
 
-    <div class="column add-bottom ">
+    <div class="column add-bottom">
         <div id="mainwrap">
             <div id="nowPlay">
                 <span class="left" id="npAction">Paused...</span>
@@ -274,13 +273,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
 				<script type="text/javascript">
 				//<![CDATA[
+				$(document).ready(function(){
+
+					new jPlayerPlaylist({
+						jPlayer: "#jquery_jplayer_1",
+						cssSelectorAncestor: "#jp_container_1"
+					}, [
+						
+						{
+							title:"1. Ellie-Goulding",
+							artist:"",
+							mp4: "video/Ellie-Goulding.mp4",
+							ogv: "video/Ellie-Goulding.ogv",
+							webmv: "video/Ellie-Goulding.webm",
+							poster:"video/play1.png"
+						}]);
+
+				});
 				//]]>
 					</script>
 			<!-- //script for play-list -->
 						<!--//video-main-->
 						 	 <!-- /agileinfo -->
 				</div>
-				<div class="response ">
+				<div class="response">
 					<h4>Responses</h4>
 					<div class="media response-info">
 						<div class="media-left response-text-left">
@@ -290,7 +306,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h5><a href="#">Username</a></h5>
 						</div>
 						<div class="media-body response-text-right">
-							<p>J'ai vraiment adoré ce morceau ! Un grand merci</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<ul>
 								<li>Sep 21, 2015</li>
 								<li><a href="single.html">Reply</a></li>
@@ -303,7 +320,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<h5><a href="#">Username</a></h5>
 								</div>
 								<div class="media-body response-text-right">
-									<p>Je suis d'accord c'est l'un de ses meilleur titre.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<ul>
 										<li>Apr 17, 2016</li>
 										<li><a href="single.html">Reply</a></li>
@@ -322,7 +340,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h5><a href="#">Username</a></h5>
 						</div>
 						<div class="media-body response-text-right">
-							<p>Je préférais son premier album...</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							<ul>
 								<li>May 21,2016</li>
 								<li><a href="single.html">Reply</a></li>
@@ -330,7 +349,57 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					
+					<div class="media response-info">
+						<div class="media-left response-text-left">
+							<a href="#">
+								<img class="media-object" src="images/c4.jpg" alt="">
+							</a>
+							<h5><a href="#">Username</a></h5>
+						</div>
+						<div class="media-body response-text-right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<ul>
+								<li>Mar 28, 2016</li>
+								<li><a href="single.html">Reply</a></li>
+							</ul>
+							<div class="media response-info">
+								<div class="media-left response-text-left">
+									<a href="#">
+										<img class="media-object" src="images/c5.jpg" alt="">
+									</a>
+									<h5><a href="#">Username</a></h5>
+								</div>
+								<div class="media-body response-text-right">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+										sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<ul>
+										<li>Feb 19, 2016</li>
+										<li><a href="single.html">Reply</a></li>
+									</ul>		
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="media response-info">
+						<div class="media-left response-text-left">
+							<a href="#">
+								<img class="media-object" src="images/c6.jpg" alt="">
+							</a>
+							<h5><a href="#">Username</a></h5>
+						</div>
+						<div class="media-body response-text-right">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available, 
+								sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<ul>
+								<li>Jan 20, 2016</li>
+								<li><a href="single.html">Reply</a></li>
+							</ul>		
+						</div>
+						<div class="clearfix"> </div>
+					</div>
 				</div>
 				 	 <!-- /agileits -->
 				<div class="clearfix"> </div>
